@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transfer Amount</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #c2e59c, #64b3f4);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: #fff;
+        padding: 40px 50px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 400px;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #34495e;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #2980b9;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <h3>Please enter the amount to be transferred</h3>
+        <form action="Transfer">
+            <label>Receiver Account No.</label>
+            <input type="text" name="raccno"/>
+
+            <label>Amount</label>
+            <input type="text" name="amt"/>
+
+            <input type="submit" value="Transfer"/>
+        </form>
+    </div>
+</body>
+</html>

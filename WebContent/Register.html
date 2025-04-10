@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .hint {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background-color: #2980b9;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1f5e8b;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const accno = document.forms["regForm"]["accno"].value;
+            const pwd = document.forms["regForm"]["pwd"].value;
+
+            const accnoPattern = /^[0-9]{4,12}$/;
+            const pwdPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+
+            if (!accnoPattern.test(accno)) {
+                alert("Account number must be 4 to 12 digits only.");
+                return false;
+            }
+
+            if (!pwdPattern.test(pwd)) {
+                alert("Password must include:\n- At least 1 uppercase letter\n- At least 1 lowercase letter\n- At least 1 number\n- At least 1 special character\n- Minimum 8 characters");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <h2>Please key in your details....</h2>
+        <form name="regForm" action="Register" onsubmit="return validateForm()">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required>
+
+            <label>CustId</label>
+            <input type="text" name="custid" placeholder="Enter unique customer ID" required>
+
+            <label>Accno</label>
+            <input type="text" name="accno" placeholder="Only 4-12 digits" required>
+            <div class="hint">Example: 12345678</div>
+
+            <label>Password</label>
+            <input type="password" name="pwd" placeholder="Strong password" required>
+            <div class="hint">Min 8 characters with uppercase, lowercase, number & special character</div>
+
+            <label>Balance</label>
+            <input type="text" name="bal" placeholder="Initial deposit amount" required>
+
+            <label>Email</label>
+            <input type="text" name="email" placeholder="e.g., yourname@example.com" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

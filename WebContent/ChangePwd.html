@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change Password</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #d3cce3, #e9e4f0);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: #fff;
+        padding: 40px 50px;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        width: 400px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        color: white;
+        background-color: #6a1b9a;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #4a148c;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <h2>Please enter your new password</h2>
+        <form action="ChangePassword">
+            <label>New Password</label>
+            <input type="password" name="npwd"/>
+
+            <label>Confirm Password</label>
+            <input type="password" name="cpwd"/>
+
+            <input type="submit" value="Update Password"/>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Balance Fail Page</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: #fff;
+        padding: 40px 50px;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        max-width: 500px;
+    }
+
+    h1 {
+        color: #e74c3c;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #2980b9;
+        color: white;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+        background-color: #1f5e8b;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <h1>Session Timed Out</h1>
+        <p>We couldn't fetch your balance because your session expired. Please login again.</p>
+        <a href="Login.html">Go to Login</a>
+    </div>
+</body>
+</html>
