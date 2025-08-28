@@ -64,7 +64,7 @@ VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
 
 ---
 
-## 🤝 Contribution
+## 🚀 Running the Application
 
 1. Clone the repository:
 
