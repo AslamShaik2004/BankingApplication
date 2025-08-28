@@ -62,6 +62,8 @@ CREATE TABLE GetStatement (
 INSERT INTO ABCBank (name, custid, accno, pwd, balance, email)
 VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
 
+
+---
 ---
 
 ## 🚀 Running the Application
