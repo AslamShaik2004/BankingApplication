@@ -62,7 +62,7 @@ CREATE TABLE GetStatement (
 INSERT INTO ABCBank (name, custid, accno, pwd, balance, email)
 VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
 
-### 🚀 Running the Application
+## 🚀 Running the Application
 
 1. Clone the repository:
 
@@ -83,7 +83,7 @@ http://localhost:8080/BankingApplication
 
 ---
 
-### 🚀 Usage
+## 🚀 Usage
 
 - **Login using the sample credentials**:
 
@@ -105,7 +105,7 @@ http://localhost:8080/BankingApplication
 
 ---
 
-### 🤝 Contribution
+## 🤝 Contribution
 
 Contributions are welcome!
 
@@ -121,13 +121,13 @@ Contributions are welcome!
 
 ---
 
-### 📜 License
+## 📜 License
 
 This project is licensed under the MIT License – feel free to use and modify it.
 
 ---
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
 **Aslam Basha Shaik**
 
