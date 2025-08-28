@@ -62,46 +62,46 @@ CREATE TABLE GetStatement (
 INSERT INTO ABCBank (name, custid, accno, pwd, balance, email)
 VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
 
-## 🚀 Running the Application
+---
 
-1. Clone the repository:
+## Running the Application
 
+Clone the repository:
+
+```bash
 git clone https://github.com/AslamShaik2004/BankingApplication.git
+```
 
+Open Eclipse → Import as Dynamic Web Project.
 
-2. Open Eclipse → Import as Dynamic Web Project.
+Configure Tomcat Server in Eclipse.
 
-3. Configure Tomcat Server in Eclipse.
+Update database connection details if needed (root / root).
 
-4. Update database connection details if needed (root / root).
+Run the project on Tomcat.
 
-5. Run the project on Tomcat.
+Open your browser and go to:
 
-6. Open your browser and go to:
-
+```arduino
 http://localhost:8080/BankingApplication
+```
 
 ---
 
-## 🚀 Usage
+## 🔐 Usage
 
-- **Login using the sample credentials**:
+Login using the sample credentials:
 
-  - Customer ID: C001
+- **Customer ID**: C001  
+- **Account No**: A1001  
+- **Password**: test123  
 
-  - Account No: A1001
+Perform operations:
 
-  - Password: test123
-
-- **Perform operations**:
-
-  - Check balance
-
-  - Deposit or withdraw money
-
-  - Transfer funds to another account
-
-  - View transaction history
+- Check balance  
+- Deposit or withdraw money  
+- Transfer funds to another account  
+- View transaction history  
 
 ---
 
@@ -109,28 +109,40 @@ http://localhost:8080/BankingApplication
 
 Contributions are welcome!
 
-1. Fork the repository
+1. Fork the repository  
+2. Create a feature branch  
 
-2. Create a feature branch (git checkout -b feature-name)
+```bash
+git checkout -b feature-name
+```
 
-3. Commit your changes (git commit -m "Add new feature")
+3. Commit your changes  
 
-4. Push to the branch (git push origin feature-name)
+```bash
+git commit -m "Add new feature"
+```
 
-5. Open a Pull Request
+4. Push to the branch  
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request  
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License – feel free to use and modify it.
+This project is licensed under the **MIT License** – feel free to use and modify it.
 
 ---
 
 ## 👨‍💻 Author
 
-**Aslam Basha Shaik**
+**Aslam Basha Shaik**  
 
 📧 Email: [aslamshaik2004@gmail.com](mailto:aslamshaik2004@gmail.com)  
-📞 Phone: [+91 7382322850](tel:+917382322850)  
+📞 Phone: +91 7382322850  
 🌐 GitHub: [github.com/AslamShaik2004](https://github.com/AslamShaik2004)  
+  
