@@ -81,6 +81,8 @@ git clone https://github.com/AslamShaik2004/BankingApplication.git
 
 http://localhost:8080/BankingApplication
 
+---
+
 ### 🚀 Usage
 
 - **Login using the sample credentials**:
@@ -101,6 +103,8 @@ http://localhost:8080/BankingApplication
 
   - View transaction history
 
+---
+
 ### 🤝 Contribution
 
 Contributions are welcome!
@@ -115,9 +119,13 @@ Contributions are welcome!
 
 5. Open a Pull Request
 
+---
+
 ### 📜 License
 
 This project is licensed under the MIT License – feel free to use and modify it.
+
+---
 
 ### 👨‍💻 Author
 
