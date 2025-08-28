@@ -1,66 +1,17 @@
 # 🏦 Banking Application
 
-A **Java-based Banking System** that simulates core banking operations like account creation, deposits, withdrawals, transfers, and balance inquiries.  
-The application is built using **Java (Servlets, JSP)**, integrates with a **MySQL database**, and runs on **Apache Tomcat**.
+A simple **Banking Application** built using **Java, JSP, Servlets, and MySQL**.  
+This project allows users to perform basic banking operations such as account creation, login, balance check, deposit, withdrawal, fund transfer, and transaction history.
 
 ---
 
-## ✨ Features
-- 🔑 **User Registration & Login** – Secure customer onboarding with unique account numbers.  
-- 💰 **Deposit & Withdrawal** – Manage account funds with proper validation.  
-- 🔄 **Fund Transfer** – Transfer money between accounts.  
-- 📊 **Balance Inquiry** – Check current account balance anytime.  
-- 🧾 **Transaction History** – View detailed records of all deposits, withdrawals, and transfers.  
-- 🗄️ **Database Integration** – Stores customer details and transactions in MySQL.  
-- ✅ **Validation** – Prevents duplicate account numbers or customer IDs during registration.  
-
----
-
-## 🛠️ Tech Stack
-- **Programming Language:** Java (Core Java, Servlets, JSP)  
-- **Database:** MySQL  
-- **Frontend:** JSP, HTML, CSS  
-- **Server:** Apache Tomcat  
-- **IDE:** Eclipse  
-
----
-
-## ⚙️ Setup Instructions
-
-### Prerequisites
-- Install **Java JDK 8+**  
-- Install **MySQL** (ensure username and password are set to `root`)  
-- Install **Apache Tomcat (v9+)**  
-- Install **Eclipse IDE** (or any Java IDE)
-
-### Database Setup
-Run the following SQL commands in MySQL:
-
-```sql
--- Create Database
-CREATE DATABASE BankApplication;
-USE BankApplication;
-
--- Table to store customer details
-CREATE TABLE ABCBank (
-    name VARCHAR(100),
-    custid VARCHAR(50) UNIQUE,
-    accno VARCHAR(20) UNIQUE,
-    pwd VARCHAR(50),
-    balance DOUBLE,
-    email VARCHAR(100)
-);
-
--- Table to store transactions
-CREATE TABLE GetStatement (
-    accno VARCHAR(20),
-    raccno VARCHAR(20),
-    balance DOUBLE
-);
-
--- Insert a sample user (for testing)
-INSERT INTO ABCBank (name, custid, accno, pwd, balance, email)
-VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
+## 📌 Features
+- 🔐 User authentication (Login/Signup)
+- 💰 Deposit and Withdraw funds
+- 🔄 Transfer funds between accounts
+- 📊 View balance and transaction history
+- 🛡 Prevent duplicate Customer ID or Account Number during registration
+- 🌐 Built using JSP, Servlets, and MySQL database
 
 ---
 
