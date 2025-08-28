@@ -64,23 +64,23 @@ VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
 
 ---
 
-## Running the Application
+## 🚀 Running the Application
 
-Clone the repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/AslamShaik2004/BankingApplication.git
 ```
 
-Open Eclipse → Import as Dynamic Web Project.
+2. Open Eclipse → Import as Dynamic Web Project.
 
-Configure Tomcat Server in Eclipse.
+3. Configure Tomcat Server in Eclipse.
 
-Update database connection details if needed (root / root).
+4. Update database connection details if needed (root / root).
 
-Run the project on Tomcat.
+5. Run the project on Tomcat.
 
-Open your browser and go to:
+6. Open your browser and go to:
 
 ```arduino
 http://localhost:8080/BankingApplication
