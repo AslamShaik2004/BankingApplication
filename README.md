@@ -62,45 +62,50 @@ CREATE TABLE GetStatement (
 INSERT INTO ABCBank (name, custid, accno, pwd, balance, email)
 VALUES ('Test User', 'C001', 'A1001', 'test123', 5000.00, 'test@example.com');
 
-
 ---
-\`\`\`
+
 ## 🚀 Running the Application
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AslamShaik2004/BankingApplication.git
-   ```
+### 1️⃣ Clone the repository:
+```bash
+git clone https://github.com/AslamShaik2004/BankingApplication.git
+```
 
-2. Open **Eclipse → Import as Dynamic Web Project**.
+### 2️⃣ Open in Eclipse
+- Open **Eclipse IDE**
+- Import project as **Dynamic Web Project**
 
-3. Configure **Tomcat Server** in Eclipse.
+### 3️⃣ Configure Tomcat Server
+- Add and configure **Apache Tomcat** in Eclipse
 
-4. Update database connection details if needed (`root / root`).
+### 4️⃣ Database Setup
+- Open MySQL and create a database:
+```sql
+CREATE DATABASE BankApplication;
+```
+- Update your **database connection details** in the project (Default: `root` / `root`)
 
-5. Run the project on Tomcat.
-
-6. Open your browser and go to:
-   ```arduino
-   http://localhost:8080/BankingApplication
-   ```
+### 5️⃣ Run the Project
+- Right-click the project → **Run on Server**
+- Open your browser and go to:
+```arduino
+http://localhost:8080/BankingApplication
+```
 
 ---
 
 ## 🔐 Usage
 
-Login using the sample credentials:
+### Sample Login Credentials:
+- **Customer ID:** `C001`
+- **Account No:** `A1001`
+- **Password:** `test123`
 
-- **Customer ID:** `C001`  
-- **Account No:** `A1001`  
-- **Password:** `test123`  
-
-Perform operations:
-
-- ✅ Check balance  
-- ✅ Deposit or withdraw money  
-- ✅ Transfer funds to another account  
-- ✅ View transaction history  
+### Available Operations:
+- ✔️ Check Balance  
+- ✔️ Deposit or Withdraw Money  
+- ✔️ Transfer Funds to Another Account  
+- ✔️ View Transaction History  
 
 ---
 
@@ -110,30 +115,29 @@ Contributions are welcome!
 
 1. Fork the repository  
 2. Create a feature branch  
-   ```bash
-   git checkout -b feature-name
-   ```  
+```bash
+git checkout -b feature-name
+```
 3. Commit your changes  
-   ```bash
-   git commit -m "Add new feature"
-   ```  
-4. Push to the branch  
-   ```bash
-   git push origin feature-name
-   ```  
-5. Open a Pull Request  
+```bash
+git commit -m "Add new feature"
+```
+4. Push to your branch  
+```bash
+git push origin feature-name
+```
+5. Open a **Pull Request**
 
 ---
 
 ## 📜 License
-
 This project is licensed under the **MIT License** – feel free to use and modify it.
 
 ---
 
 ## 👨‍💻 Author
-
 **Aslam Basha Shaik**  
+
 📧 Email: [aslamshaik2004@gmail.com](mailto:aslamshaik2004@gmail.com)  
 📞 Phone: +91 7382322850  
-🌐 GitHub: [github.com/AslamShaik2004](https://github.com/AslamShaik2004)
+🌐 GitHub: [github.com/AslamShaik2004](https://github.com/AslamShaik2004)  
